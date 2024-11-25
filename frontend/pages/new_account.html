@@ -7,33 +7,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css"> <!-- Link to global CSS -->
+    <script defer src="../js/navbar-footer.js"></script> <!-- JavaScript for loading navbar/footer -->
+    <script defer src="../js/main.js"></script> <!-- JavaScript for navigation functionality -->
     <title>New account</title>
     <style>
-        html, body {
-            height: 130%;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-        }
-            
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5d7a6;
-        }
-
-        header {
-            background-color: #a05e18;
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        header img {
-            height: 40px;
-        }
-
         nav {
             display: flex;
             gap: 15px;
@@ -154,60 +132,25 @@
             font-family: Arial, sans-serif;
             cursor: pointer;
         }
-
-        footer {
-            height: 15%;
-            background-color: #a05e18;
-            color: #fff;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: auto;
-        }
-
-        footer .social-icons {
-            display: flex;
-            gap: 10px;
-        }
-
-        footer .social-icons a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 20px;
-        }
-
-        footer .contact {
-            height: auto;
-            width: 28%;
-            margin: 30px 30px auto;
-            background-color: #FFAE36;
-            padding: 10px;
-            border-radius: 14px;
-            color: #4E1600;
-            font-size: 75%;
-            line-height: 0.75;
-        }
         #data{
             padding-left: 140px;
             margin-bottom: 1px;
             line-height: 0.2;
         }
+        #country{
+            width: 65%;
+            color:#686868;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Logo">
-        <nav>
-            <a href="#" color: black; style="color:black; background-color: #FFAE36;">About us</a>
-            <a href="#" style="color: black;">Honey types</a>
-            <a href="#" style="color: black">Shop</a>
-            <a href="#" style="color: black">Contact</a>
-            <a class="sign_in_button" href="#" >Sign in</a>
-            <a class="register_button" href="#">Register</a>
-        </nav>
-    </header>
-    <p style="text-align: center; color: #686868; font-size: 20px;">Main page / Log In / New account</p>
+      <!-- Placeholder for navbar -->
+  <div id="navbar"></div>
+
+  <!-- Main content area -->
+  <div class="main-content">
+    <!-- Page-specific content goes here -->
+    <p style="text-align: center; color: #686868; font-size: 20px; margin-top: 0px;">Main page / Log In / New account</p>
     <div class="login-container">
         <h1 >New Account</h1>
         <p style="text-align: center; font-family: Alfa Slab One, sans-serif; padding-bottom: 20px;">New to this site? 
@@ -294,25 +237,12 @@
             <button type="submit">Sign up</button>
         </form>
     </div>
-    <footer>
-        <div class="social-icons">
-            <a href="#">X</a>
-            <a href="#">Instagram</a>
-            <a href="#">YouTube</a>
-            <a href="#">LinkedIn</a>
-        </div>
-        <div class="links">
-            <a href="#">About us</a><br>
-            <a href="#">Honey types</a><br>
-            <a href="#">Shop</a><br>
-            <a href="#">Contact</a>
-        </div>
-        <div class="contact">
-            <p>Contact us</p>
-            <p>Phone:</p>
-            <p>Email:</p>
-            <p>Location:</p>
-        </div>
-    </footer>
+  </div>
+
+  <!-- Placeholder for footer -->
+  <div id="footer"></div>
+
+
+    
 </body>
 </html>
