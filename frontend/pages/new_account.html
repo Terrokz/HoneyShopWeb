@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <title>New account</title>
+    <style>
+        html, body {
+            height: 130%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+            
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5d7a6;
+        }
+
+        header {
+            background-color: #a05e18;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        nav a.sign_in_button{
+            background-color: #CF8500;
+            border: 1px solid black;
+            color: black;
+        }
+        nav a.sign_in_button:hover, a.register_button:active{
+            background-color: #d9d9d9	;
+            color: black;
+        }
+        nav a.register_button{
+            background-color: #743A00;
+            color: white;
+            border: 1px solid black;
+        }
+        nav a.register_button:hover, a.register_button:active{
+            background-color: black;
+            color: white;
+        }
+
+            
+        .login-container {
+            width: 43%;
+            height: 100%;
+            margin: 10px auto 70px;
+            background-color: #EDCB89;
+            padding: 30px;
+            border-radius: 28px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .login-container h1 {
+            color: #7d4d1f;
+            text-align: center;
+            padding-top: 25px;
+            padding-bottom: 5px;
+            color: #743A00; 
+            font-family: Baloo Thambi, sans-serif; 
+            font-size: 50px; 
+            margin: auto 10px;
+        }
+
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-container label {
+            margin-bottom: 5px;
+            color: #7d4d1f;
+            width: 100%;
+            
+        }
+
+        .login-container input {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            margin: 2px auto 28px;
+            border: 1.5px solid #ccc;
+            border-radius: 10px;
+            width: 65%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        .login-container button {
+            font-family: 'Baloo Thambi 2', sans-serif;
+            font-size: 25px;
+            padding: 1px;
+            background-color: #743A00;
+            margin: 10px auto 25px;
+            width: 25%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .login-container .extra-links {
+            text-align: center;
+            margin-top: 1px;
+        }
+
+        .login-container .extra-links a {
+            text-decoration: underline;
+            color: #7d4d1f;
+            font-weight: bold;
+        }
+
+        .login-container button:hover {
+            background-color: #a05e18;
+        }
+        .login-container select {
+            display: flex;
+            align-items: center;
+            padding: 6px;
+            margin: 10px auto 23px;
+            border: 1.5px solid #ccc;
+            border-radius: 10px;
+            width: 67.5%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+            font-size: 16px;
+            background-color: #fff;
+            color: #7d4d1f;
+            font-family: Arial, sans-serif;
+            cursor: pointer;
+        }
+
+        footer {
+            height: 15%;
+            background-color: #a05e18;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        footer .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        footer .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        footer .contact {
+            height: auto;
+            width: 28%;
+            margin: 30px 30px auto;
+            background-color: #FFAE36;
+            padding: 10px;
+            border-radius: 14px;
+            color: #4E1600;
+            font-size: 75%;
+            line-height: 0.75;
+        }
+        #data{
+            padding-left: 140px;
+            margin-bottom: 1px;
+            line-height: 0.2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo">
+        <nav>
+            <a href="#" color: black; style="color:black; background-color: #FFAE36;">About us</a>
+            <a href="#" style="color: black;">Honey types</a>
+            <a href="#" style="color: black">Shop</a>
+            <a href="#" style="color: black">Contact</a>
+            <a class="sign_in_button" href="#" >Sign in</a>
+            <a class="register_button" href="#">Register</a>
+        </nav>
+    </header>
+    <p style="text-align: center; color: #686868; font-size: 20px;">Main page / Log In</p>
+    <div class="login-container">
+        <h1 >New Account</h1>
+        <p style="text-align: center; font-family: Alfa Slab One, sans-serif; padding-bottom: 20px;">New to this site? 
+            <a href="#" style="color: #654900; text-decoration: underline;">Sign Up</a>
+        </p>
+        <form>
+                <label id="data">First name</label><br>
+                <input type="text" id="firstName" placeholder="Enter your first name" required>
+            
+                <label id="data">Last name</label><br>
+                <input type="text" id="lastName" placeholder="Enter your last name" required>
+             
+                <label for="email" id="data">Email Address</label><br>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            
+                <label id="data">Country</label><br>
+                <select id="country" name="country" placeholder="Spain" required>
+                    <script>
+                        // Generowanie listy krajów za pomocą Intl.DisplayNames
+                        const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
+                    
+                        // Lista kodów krajów (ISO 3166-1 Alpha-2)
+                        const allCountryCodes = [
+        'AF', 'AX', 'AL', 'DZ', 'AS', 'AD', 'AO', 'AI', 'AQ', 'AG', 'AR', 'AM', 'AW', 'AU', 'AT', 'AZ',
+        'BS', 'BH', 'BD', 'BB', 'BY', 'BE', 'BZ', 'BJ', 'BM', 'BT', 'BO', 'BQ', 'BA', 'BW', 'BV', 'BR',
+        'IO', 'BN', 'BG', 'BF', 'BI', 'CV', 'KH', 'CM', 'CA', 'KY', 'CF', 'TD', 'CL', 'CN', 'CX', 'CC',
+        'CO', 'KM', 'CG', 'CD', 'CK', 'CR', 'CI', 'HR', 'CU', 'CW', 'CY', 'CZ', 'DK', 'DJ', 'DM', 'DO',
+        'EC', 'EG', 'SV', 'GQ', 'ER', 'EE', 'SZ', 'ET', 'FK', 'FO', 'FJ', 'FI', 'FR', 'GF', 'PF', 'TF',
+        'GA', 'GM', 'GE', 'DE', 'GH', 'GI', 'GR', 'GL', 'GD', 'GP', 'GU', 'GT', 'GG', 'GN', 'GW', 'GY',
+        'HT', 'HM', 'VA', 'HN', 'HK', 'HU', 'IS', 'IN', 'ID', 'IR', 'IQ', 'IE', 'IM', 'IL', 'IT', 'JM',
+        'JP', 'JE', 'JO', 'KZ', 'KE', 'KI', 'KP', 'KR', 'KW', 'KG', 'LA', 'LV', 'LB', 'LS', 'LR', 'LY',
+        'LI', 'LT', 'LU', 'MO', 'MG', 'MW', 'MY', 'MV', 'ML', 'MT', 'MH', 'MQ', 'MR', 'MU', 'YT', 'MX',
+        'FM', 'MD', 'MC', 'MN', 'ME', 'MS', 'MA', 'MZ', 'MM', 'NA', 'NR', 'NP', 'NL', 'NC', 'NZ', 'NI',
+        'NE', 'NG', 'NU', 'NF', 'MK', 'MP', 'NO', 'OM', 'PK', 'PW', 'PS', 'PA', 'PG', 'PY', 'PE', 'PH',
+        'PN', 'PL', 'PT', 'PR', 'QA', 'RE', 'RO', 'RU', 'RW', 'BL', 'SH', 'KN', 'LC', 'MF', 'PM', 'VC',
+        'WS', 'SM', 'ST', 'SA', 'SN', 'RS', 'SC', 'SL', 'SG', 'SX', 'SK', 'SI', 'SB', 'SO', 'ZA', 'GS',
+        'SS', 'ES', 'LK', 'SD', 'SR', 'SE', 'CH', 'SY', 'TW', 'TJ', 'TZ', 'TH', 'TL', 'TG', 'TK', 'TO',
+        'TT', 'TN', 'TR', 'TM', 'TC', 'TV', 'UG', 'UA', 'AE', 'GB', 'US', 'UM', 'UY', 'UZ', 'VU', 'VE',
+        'VN', 'VG', 'VI', 'WF', 'EH', 'YE', 'ZM', 'ZW'
+    ];
+                    
+                        // Pobranie elementu select
+                        const countrySelect = document.getElementById('country');
+                    
+                        const defaultOption = document.createElement('option');
+                        defaultOption.value = '';
+                        defaultOption.textContent = 'Select your country';
+                        defaultOption.disabled = true;
+                        defaultOption.selected = true;
+                        countrySelect.appendChild(defaultOption);
+                        // Generowanie opcji dla select
+                        allCountryCodes.forEach(code => {
+                            const option = document.createElement('option');
+                            option.value = code;
+                            option.textContent = regionNames.of(code);
+                            countrySelect.appendChild(option);
+                        });
+                    </script>
+                    </select>
+            
+                <label id="data">City</label><br>
+                <input type="text" id="city" placeholder="Enter your city" required>
+            
+            
+                <label id="data">Street</label><br>
+                <input type="text" id="street" placeholder="Enter your street" required>
+              
+            
+                <label id="data">Street number</label><br>
+                <input type="number" id="streetNumber" placeholder="Enter your street number" required min="0">
+            
+            
+                <label id="data">Postal code</label><br>
+                <input type="text" id = "postalCode" placeholder="Enter your postal code" required>
+             
+            
+                <label for="password" id="data">Password</label><br>
+                <input type="password" id="password1" required>
+            
+            
+                <label for="password" id="data">Repeat password</label><br>
+                <input type="password" id="password2" required>
+            
+            <button type="submit">Sign up</button>
+        </form>
+    </div>
+    <footer>
+        <div class="social-icons">
+            <a href="#">X</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <div class="links">
+            <a href="#">About us</a><br>
+            <a href="#">Honey types</a><br>
+            <a href="#">Shop</a><br>
+            <a href="#">Contact</a>
+        </div>
+        <div class="contact">
+            <p>Contact us</p>
+            <p>Phone:</p>
+            <p>Email:</p>
+            <p>Location:</p>
+        </div>
+    </footer>
+</body>
+</html>
