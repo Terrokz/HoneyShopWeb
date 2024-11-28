@@ -34,7 +34,7 @@ body {
     margin-bottom: 3px;
 }
 .sidebar {
-    width: 200px; /* Zajmuje 20% szerokości strony */
+    width: 224px; /* Zajmuje 20% szerokości strony */
     background-color: #ffffff;
     height: 100vh; /* Pełna wysokość okna */
     display: flex;
@@ -113,8 +113,9 @@ transition: background-color 0.3s ease; /* Animacja zmiany tła */
     text-align: center;
 }
 #company_logo{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    margin-left: 31px;
     align-items: center;
     justify-content: center;
     margin-top: 0;
